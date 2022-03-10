@@ -1,7 +1,7 @@
-import Product from "../models/products";
-import { Op } from "sequelize";
+const Product = require("../models/products");
+const Sequelize = require("sequelize");
 
-export default {
+module.exports = {
     async create(req, res) {
         const { barcode, name, validate_product, qtd, price } = req.body;
 
@@ -190,7 +190,7 @@ export default {
         const { query } = req.params;
 
         const response = await Product.findAll({
-            where: { name: { [Op.like]: `%${query}%` } }
+            where: { name: { [Sequelize.Op.like]: `%${query}%` } }
         });
         return res.json(response)
     }

@@ -1,6 +1,6 @@
-import Sequelize, { Model } from "sequelize";
+const Sequelize = require("sequelize");
 
-class Product extends Model {
+class Product extends Sequelize.Model {
     static init(sequelize) {
         super.init({
             barcode: Sequelize.STRING,
@@ -14,7 +14,7 @@ class Product extends Model {
     };
 };
 
-export default Product;
+module.exports = Product;
 
 // "barcode": "10101010101",
 // "name": "Produto teste",

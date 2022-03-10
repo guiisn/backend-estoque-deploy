@@ -1,8 +1,13 @@
-import { Router } from 'express';
+const Router = require('express');
 
-import productsController from './app/controllers/productsController.js';
+const productsController = require('./app/controllers/productsController.js');
 
-const routes = new Router();
+const routes = Router.Router();
+
+routes.get('/', (req, res) => {
+    res.json({ ok: true })
+})
+
 
 routes.get('/product', productsController.listAll);
 routes.post('/product', productsController.create);
@@ -19,4 +24,4 @@ routes.get('/products/expiration', productsController.productsExpiration);
 
 routes.get('/products/:query', productsController.find);
 
-export default routes;
+module.exports = routes;

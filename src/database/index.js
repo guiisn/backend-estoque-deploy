@@ -1,9 +1,9 @@
 //conexao com banco/ carregamento dos models
-import Sequelize from "sequelize";
+const Sequelize = require("sequelize");
 
-import Products from '../app/models/products.js';
+const Products = require('../app/models/products.js');
 
-import databaseConfig from '../config/database.js';
+const databaseConfig = require('../config/database.js');
 
 const models = [Products];
 
@@ -26,4 +26,4 @@ class Database {
     };
 };
 
-export default new Database();
+module.exports = new Database();
