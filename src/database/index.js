@@ -1,9 +1,9 @@
 //conexao com banco/ carregamento dos models
 import Sequelize from "sequelize";
 
-import Products from '../app/models/products';
+import Products from '../app/models/products.js';
 
-import databaseConfig from '../config/database';
+import databaseConfig from '../config/database.js';
 
 const models = [Products];
 
