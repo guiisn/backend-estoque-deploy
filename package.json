@@ -1,22 +1,23 @@
 {
-  "name": "backend-estoque",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "node src/server.js"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
-    "nodemon": "^2.0.13",
-    "sequelize-cli": "^6.2.0",
-    "sucrase": "^3.20.1"
-  }
+    "name": "backend-estoque",
+    "type": "commonjs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql2": "^2.3.0",
+        "sequelize": "^6.6.5"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.6",
+        "@babel/core": "^7.17.5",
+        "@babel/preset-env": "^7.16.11",
+        "nodemon": "^2.0.13",
+        "sequelize-cli": "^6.2.0",
+        "sucrase": "^3.20.1"
+    }
 }
