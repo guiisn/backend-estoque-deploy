@@ -11,6 +11,10 @@ module.exports = {
             return res.status(500).json({ error: 'Produto já cadastrado' });
         };
 
+        if (barcode === '' || name === '' || validate_product === '' || qtd === '' || price === '') {
+            return res.status(500).json({ error: 'TODOS os campos são obrigatórios.' });
+        }
+
         await Product.create({
             barcode,
             name,
