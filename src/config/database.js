@@ -1,7 +1,7 @@
 module.exports = {
     dialect: 'mysql',
-    host: 'estoque-aws.ce7o6fa7tija.us-east-1.rds.amazonaws.com',
-    username: 'root',
+    host: 'newestoque-aws.ce7o6fa7tija.us-east-1.rds.amazonaws.com',
+    username: 'admin',
     password: '12345678',
     database: 'estoque',
     dialectOptions: {
